@@ -12,17 +12,11 @@ echo "Qweasd123!@#" | anydesk --set-password
 apt install vlc
 sleep 1
 
-### install git
-apt install git
-sleep 1
-
 ### Clone git rep for install
-git clone https://github.com/gadmin2151/muz-merci.git
-sleep 3
-cd muz-merci
 cat .crontab.ini >> /etc/crontab
 cat .script.ini >> /opt/reloadVLC.sh
-cat .service.ini >> /etc/systemd/system/muz.service
+mkdir /home/gadmin/.config/autostart/
 sleep 1
-systemctl daemon-reload
-systemctl enable muz.service
+cat .service.ini >> /home/gadmin/.config/autostart/music-client.desktop
+
+

@@ -2,4 +2,6 @@
 
 ## Fast install muz client for merci
 
-sudo bash https://raw.githubusercontent.com/gadmin2151/muz-merci/main/install.sh
+git clone https://github.com/gadmin2151/muz-merci.git
+cd muz-merci/
+sudo bash install.sh
